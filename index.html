@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Cédula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validador de Cédula de Identidad y Electoral</h1>
+        <img src="image.png" alt="Bandera Dominicana" class="flag">
+        <form id="form-cedula">
+            <label for="cedula">Ingrese la cédula:</label>
+            <input 
+                type="text" 
+                id="cedula" 
+                name="cedula" 
+                maxlength="13" 
+                required 
+                placeholder="XXX-XXXXXXX-X" 
+                oninput="formatearCedula(this)">
+            <button type="submit">Validar</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
